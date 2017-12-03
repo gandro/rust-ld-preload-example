@@ -11,8 +11,6 @@ libc = "0.2"
 crate-type = ["cdylib"]
 name = "preload"
 
-[profile]
-
 [profile.dev]
 panic = "abort"
 
