@@ -1,0 +1,20 @@
+[package]
+authors = ["Sebastian Wicki <gandro@gmx.net>"]
+name = "preload"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "1.0.0"
+libc = "0.2"
+
+[lib]
+crate-type = ["cdylib"]
+name = "preload"
+
+[profile]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
